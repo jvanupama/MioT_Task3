@@ -1,0 +1,26 @@
+<button type="button" onclick="toggle()">Click</button>
+<script>
+  function toggle()
+  {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("get", "/toggle");
+    xmlhttp.onreadystatechange = function()
+    {
+      if (xmlhttp.readyState == 4)
+      {
+        switch(xmlhttp.status)
+        {
+          case 200:
+            break;
+          case 500:
+            alert("Error Occurred!");
+            break;
+          default:
+            alert("Unexpected Error. HTTP Status: " + xmlhttp.status);
+        }
+      }
+    };
+
+    xmlhttp.send();
+  }
+</script>
