@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@android:color/background_light"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnSpeak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Back"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/happybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/happy_emotion" />
+
+    <ImageButton
+        android:id="@+id/surpbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/happybtn"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/surprise_emotion" />
+
+    <ImageButton
+        android:id="@+id/sadbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surpbtn"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/sad_emotion" />
+
+    <ImageButton
+        android:id="@+id/angrybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sadbtn"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/angry_emotion" />
+
+    <ImageButton
+        android:id="@+id/fearbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/angrybtn"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/fear_emotion" />
+   </RelativeLayout>
